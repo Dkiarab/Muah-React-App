@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  padding-right: 1.5em;
+}
+.menu:hover {
+  cursor: pointer;
+}
+.menu.explore {
+  margin-right: 1.5em;
+  width: 23px;
+  height: 23px;
+}
+.menu.kiss {
+  margin-right: 1.5em;
+  width: 23px;
+  height: 23px;
+}
+.menu.upload {
+  margin-right: 1.5em;
+  width: 23px;
+  height: 23px;
+}
