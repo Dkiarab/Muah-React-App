@@ -1,21 +1,23 @@
 .menu {
   display: flex;
   padding-right: 1.5em;
+  align-items: baseline;
 }
 .menu:hover {
   cursor: pointer;
 }
-.menu.explore {
+.explore {
   margin-right: 1.5em;
   width: 23px;
   height: 23px;
 }
-.menu.kiss {
+.Kiss {
   margin-right: 1.5em;
   width: 23px;
   height: 23px;
+  border-radius: 50%;
 }
-.menu.upload {
+.upload {
   margin-right: 1.5em;
   width: 23px;
   height: 23px;

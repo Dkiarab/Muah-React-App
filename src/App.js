@@ -1,14 +1,18 @@
-import React from "react";
-import HomePage from "./pages/Home/HomePage";
 import "./styles/App.css";
 import NavBar from "./components/NavBar";
+import Cards from "./components/Cards";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      HELLO WORLD
-      {/* <NavBar /> */}
-      {/* <HomePage /> */}
+      <NavBar />
+      <main>
+        <div className="container">
+          <Cards />
+        </div>
+      </main>
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -2,20 +2,7 @@ import React, { Component } from "react";
 import "../../styles/HomePage.css";
 import NavBar from "../../components/NavBar";
 import MainContent from "./MainContent";
+import Footer from "../../components/Footer";
 
-class HomePage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <MainContent />
-      </div>
-    );
-  }
-}
-
+const HomePage = () => {};
 export default HomePage;

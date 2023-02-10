@@ -1,20 +1,23 @@
 import logo from "../assests/logo.png";
 import searchIcon from "../assests/pinksearch2.png";
-import Menu from "./Menu.js";
 import dropDown from "../assests/show-more.png";
+import "../styles/NavBar.css";
+import Menu from "../components/Menu";
 
 function NavBar() {
   return (
     <div className="navbar">
-      <div className="container">
+      <div className="navRight">
         <img className="logo" src={logo} alt="Muah Logo" />
-        <img className="dropDown" src={dropDown} alt="" />
-        <div className="search">
-          <img className="searchIcon" src={searchIcon} alt="search icon" />
-          <span className="searchText">Search</span>
-        </div>
-        <Menu />
+        <button>
+          <img className="dropDown" src={dropDown} alt="" />
+        </button>
       </div>
+      <div className="search">
+        <img className="searchIcon" src={searchIcon} alt="search icon" />
+        <input type="text" placeholder="Search"></input>
+      </div>
+      <Menu />
     </div>
   );
 }

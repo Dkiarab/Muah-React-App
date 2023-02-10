@@ -1,55 +1,80 @@
-.navigation {
+.navbar {
   position: fixed;
   top: 0;
   z-index: 2;
   background-color: #ffffff;
   width: 100%;
   border-bottom: 1px solid #dbdbdb;
-}
-
-.navigation.container {
   padding: 1em 0 0.9em 0;
   display: flex;
-  align-content: center;
   justify-content: space-between;
-  max-width: 1000px;
+  align-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(242, 112, 156),
+    rgb(255, 148, 114)
+  );
   margin: 0 auto;
 }
 
-.navigation.logo {
-  padding: 0 1em;
-  width: 100px;
+.container {
+  padding: 1em 0 0.9em 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
-.navigation.dropDown {
+
+.logo {
+  padding: 0 1em;
+  width: 150px;
+}
+.dropDown {
   width: 20px;
   height: 20px;
+}
+button {
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+}
+.dropDown:hover {
+  cursor: pointer;
 }
 .logo:hover {
   cursor: pointer;
 }
-.navigation.search {
+.search {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
-  background-color: #dbdbdb;
+  background-color: transparent;
   min-width: 225px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 20px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  min-width: 225px;
 }
 
-.navigation.searchIcon {
-  width: 10px;
+.searchIcon {
+  width: 12px;
   opacity: 0.4;
   margin-right: 0.3em;
+  border-radius: 50%;
 }
 
-.navigation.searchText {
+.searchText {
   color: #8e8e8e;
   font-size: 0.85em;
   font-weight: 300;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .search {
     display: none !important;
   }
