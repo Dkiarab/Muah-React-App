@@ -19,3 +19,7 @@
 .icon:hover {
   cursor: pointer;
 }
+.views {
+  display: inline-flex;
+  margin-right: 5px;
+}

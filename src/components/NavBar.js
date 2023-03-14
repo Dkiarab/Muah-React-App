@@ -1,17 +1,22 @@
 import logo from "../assests/logo.png";
 import searchIcon from "../assests/pinksearch2.png";
-import dropDown from "../assests/show-more.png";
+import { AiOutlineDown } from "react-icons/ai";
 import "../styles/NavBar.css";
 import Menu from "../components/Menu";
+import { useState } from "react";
 
-function NavBar() {
+import Modal from "./Modal";
+
+function NavBar({ onClose }) {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="navbar">
       <div className="navRight">
         <img className="logo" src={logo} alt="Muah Logo" />
-        <button>
-          <img className="dropDown" src={dropDown} alt="" />
+        <button classname="modalBtn" onClick={() => setModalOpen(true)}>
+          <AiOutlineDown />
         </button>
+        <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
       </div>
       <div className="search">
         <img className="searchIcon" src={searchIcon} alt="search icon" />

@@ -1,8 +1,8 @@
 .card {
   border: 1px solid #dbdbdb;
-  background-color: rgb(255, 148, 114);
+  background-color: whitesmoke;
   margin-bottom: 1em;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 header {
   display: flex;
@@ -47,12 +47,19 @@ span {
   font-size: 0.85em;
   padding: 1.5em 1.25em;
 }
+
 .commentText {
-  color: #8e8e8e;
+  color: #574f4f;
 }
 
+form {
+  display: flex;
+}
+/* form button {
+  margin-left: 250px;
+} */
 .postText {
-  color: #b3dffc;
+  color: #574f4f;
 }
 
 @media only screen and (max-width: 440px) {

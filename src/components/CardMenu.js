@@ -12,6 +12,7 @@ function CardMenu() {
 
         <img className="kiss" src={kiss} />
       </div>
+
       <img className="icon" src={share} />
     </div>
   );
