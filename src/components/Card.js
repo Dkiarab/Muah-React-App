@@ -4,10 +4,9 @@ import Comment from "./Comment";
 import CardMenu from "./CardMenu";
 import React, { useState } from "react";
 
-import getComments from "../utils/getComments";
-
 function Card(props) {
-  const { storyBorder, image, likedByText, likedByNumber, hours } = props;
+  const { storyBorder, image, likedByText, likedByNumber, hours, comments } =
+    props;
   const [postContent, setPostContent] = useState("");
   return (
     <div className="card">
@@ -24,14 +23,12 @@ function Card(props) {
         </span>
       </div>
       <div className="comments">
-        {getComments.map((comment) => {
+        {comments.map((comment) => {
           return (
             <Comment
               key={comment.id}
               accountName={comment.user}
-              comment={(comment) =>
-                getComments[Math.floor(Math.random() * getComments)]
-              }
+              comment={comment.text}
             />
           );
         })}
